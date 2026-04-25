@@ -41,7 +41,9 @@ const Header = () => {
       {/* Icons & Resume */}
       <div className="hidden md:flex flex-row gap-4 items-center">
         <Moon className="cursor-pointer hover:text-blue-500 transition-colors" size={20} />
-        <Terminal className="cursor-pointer hover:text-green-500 transition-colors" size={20} />
+        <Link href="https://github.com/Programmingchuks24" target="_blank" rel="noopener noreferrer">
+          <Terminal className="cursor-pointer hover:text-green-500 transition-colors" size={20} />
+        </Link>
         <button className="text-white bg-black px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-400 hover:text-black hover:cursor-pointer transition-all">
           RESUME
         </button>

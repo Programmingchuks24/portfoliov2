@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image';
-import { Database } from 'lucide-react';
+import { Database, Rocket } from "lucide-react";
+import Image from "next/image";
+import React from "react";
 
 const page = () => {
   return (
@@ -11,7 +11,7 @@ const page = () => {
           <span className="relative inline-flex size-2 rounded-full bg-[#3e4cff]"></span>
         </span>
 
-        <p>Software engineer</p>
+        <p>Software engineer and Fullstack Developer</p>
       </div>
 
       <div className="mt-8 flex flex-row  ">
@@ -35,7 +35,7 @@ const page = () => {
         <Image
           src="/assets/images/pic.png"
           alt="Profile Image"
-          className="hidden md:block"
+          className="hidden md:block w-auto h-auto"
           width={250}
           height={200}
         />
@@ -66,7 +66,13 @@ const page = () => {
               </p>
             </div>
             {/* You would add your waveform background image here */}
-            <Image src = "/assets/images/counsell.png" alt="Counselling App" fill className="object-cover opacity-20 absolute inset-0" />
+            <Image
+              src="/assets/images/counsell.png"
+              alt="Counselling App"
+              fill
+              className="object-cover opacity-20 absolute inset-0"
+              loading="eager"
+            />
           </div>
 
           {/* Nexus DB Engine - Tall Card */}
@@ -78,7 +84,8 @@ const page = () => {
               </div>
               <h3 className="text-2xl font-bold mb-2">Django Library app</h3>
               <p className="text-gray-600 text-sm">
-                A django library app with CRUD operations and user authentication. Built with Django
+                A django library app with CRUD operations and user
+                authentication. Built with Django
               </p>
             </div>
             <span className="text-[10px] font-bold px-2 py-1 bg-gray-100 rounded self-start">
@@ -89,11 +96,12 @@ const page = () => {
           {/* Apollo Gateway - Small Card */}
           <div className="bg-white border border-gray-100 rounded-3xl p-8">
             <div className="bg-blue-50 w-10 h-10 rounded-full flex items-center justify-center mb-4 text-blue-600">
-              {/* Apollo Icon */}
+              <Rocket size={20} />
             </div>
-            <h3 className="text-2xl font-bold mb-2">Apollo Gateway</h3>
+            <h3 className="text-2xl font-bold mb-2">FreeLancr</h3>
             <p className="text-gray-600 text-sm">
-              Unified GraphQL federation layer...
+              A full-stack freelance marketplace web application built with
+              React, Node.js, python and fastapi
             </p>
           </div>
 
@@ -101,23 +109,34 @@ const page = () => {
           <div className="md:col-span-2 bg-[#1a1a1a] text-white rounded-3xl p-8 min-h-62.5">
             <div className="flex gap-2 mb-4">
               <span className="text-[10px] font-bold px-2 py-1 bg-white/10 rounded">
-                TERRAFORM
+                React
               </span>
               <span className="text-[10px] font-bold px-2 py-1 bg-white/10 rounded">
-                AWS
+                Node.js
               </span>
             </div>
             <h3 className="text-2xl font-bold mb-4">
-              Zero-Trust Network Infra
+              Magnify
             </h3>
             <p className="text-gray-400 text-sm max-w-md">
-              Complete overhaul of corporate cloud infrastructure...
+              A Landing page for a company that does consulting
             </p>
           </div>
         </div>
       </div>
+
+      <div className="mt-10 p-8 bg-purple-200 text-center items-center justify-center md:items-start md:text-left  px-12 min-h-70 rounded-3xl">
+
+        <div className="border-b border-gray-400 flex flex-col gap-4 pb-8 ">
+          <p className = "text-3xl font-bold">Engineering Philosophy</p>
+
+          <p className="text-gray-600">
+            I believe in writing clean, maintainable code that solves real problems. My approach combines technical excellence with a focus on user experience and business value.
+          </p>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
-export default page
+export default page;
