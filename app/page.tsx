@@ -1,4 +1,4 @@
-import { Database, Rocket } from "lucide-react";
+import { Activity, Cpu, Database, Rocket } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -115,9 +115,7 @@ const page = () => {
                 Node.js
               </span>
             </div>
-            <h3 className="text-2xl font-bold mb-4">
-              Magnify
-            </h3>
+            <h3 className="text-2xl font-bold mb-4">Magnify</h3>
             <p className="text-gray-400 text-sm max-w-md">
               A Landing page for a company that does consulting
             </p>
@@ -125,14 +123,50 @@ const page = () => {
         </div>
       </div>
 
-      <div className="mt-10 p-8 bg-purple-200 text-center items-center justify-center md:items-start md:text-left  px-12 min-h-70 rounded-3xl">
+      <div className="mt-10 p-10 bg-[#f9f9ff] rounded-4xl border border-gray-100">
+        {/* Main Container: Stacked on mobile, 2 columns on desktop */}
+        <div className="flex flex-col lg:flex-row gap-12 items-start">
+          {/* Left Column: Title and Main Philosophy */}
+          <div className="flex flex-col gap-6 lg:w-1/2">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-black">
+              Engineering Philosophy
+            </h2>
+            <p className="text-gray-600 text-lg leading-relaxed max-w-xl">
+              I believe in building mobile experiences that feel native, stay
+              responsive under load, and maintain a clear separation of
+              concerns. Great code isn&apos;t just about solving the problem;
+              it&apos;s about making sure the next developer can understand
+              exactly how it was solved.
+            </p>
+          </div>
 
-        <div className="border-b border-gray-400 flex flex-col gap-4 pb-8 ">
-          <p className = "text-3xl font-bold">Engineering Philosophy</p>
+          {/* Right Column: The two detail points */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-10 lg:w-1/2 lg:pl-12">
+            {/* Point 1 */}
+            <div className="flex flex-col gap-3">
+              <Activity size={22} className="text-[#3e4cff]" />
+              <p className="font-bold text-xs tracking-widest uppercase text-gray-900">
+                Domain-Driven Design
+              </p>
+              <p className="text-gray-500 text-sm leading-6">
+                Keep business logic out of the UI. I focus on modular
+                architectures that make apps easy to test, refactor, and scale.
+              </p>
+            </div>
 
-          <p className="text-gray-600">
-            I believe in writing clean, maintainable code that solves real problems. My approach combines technical excellence with a focus on user experience and business value.
-          </p>
+            {/* Point 2 */}
+            <div className="flex flex-col gap-3">
+              <Cpu size={22} className="text-[#3e4cff]" />
+              <p className="font-bold text-xs tracking-widest uppercase text-gray-900">
+                Observability First
+              </p>
+              <p className="text-gray-500 text-sm leading-6">
+                If you aren&apos;t measuring it, you can&apos;t improve it. I
+                integrate deep monitoring to catch performance bottlenecks
+                before the user does.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
