@@ -40,9 +40,9 @@ const Page = () => {
             action={async (formData) => {
               const result = await sendEmail(formData);
               if (result.success) {
-                toast.success("Message sent! I'll get back to you soon.");
+                toast.success("Message sent! I'll get back to you soon.", {position:"top-center"});
               } else {
-                toast.warning("Something went wrong. Please try again.");
+                toast.warning("Something went wrong. Please try again.", {position:"top-center"});
               }
             }}
           >
