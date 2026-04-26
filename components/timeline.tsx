@@ -1,7 +1,14 @@
 "use client"
 import { motion } from "framer-motion";
 
-const TimelineItem = ({ item, index }: { item: any; index: number }) => {
+interface ExperienceItem {
+  title: string;
+  company: string;
+  date: string;
+  points: string[];
+}
+
+const TimelineItem = ({ item, index, isLast }: { item: ExperienceItem; index: number; isLast?: boolean }) => {
   return (
     <div className="relative">
       {/* The Dot Animation */}
@@ -10,7 +17,7 @@ const TimelineItem = ({ item, index }: { item: any; index: number }) => {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.4, delay: index * 0.1 }}
         viewport={{ once: true }}
-        className="absolute -left-[41px] top-1 flex items-center justify-center z-10"
+        className="absolute -left-10.25 top-1 flex items-center justify-center z-10"
       >
         <div className="bg-white p-1 rounded-full">
           <div
@@ -57,7 +64,7 @@ const TimelineItem = ({ item, index }: { item: any; index: number }) => {
 };
 
 export const Timeline = () => {
-  const experiences = [
+  const experiences: ExperienceItem[] = [
   { 
     title: "Full-stack Developer", 
     company: "Freelance", 
@@ -83,7 +90,7 @@ export const Timeline = () => {
       <div className="relative border-l-2 border-gray-100 ml-3 pl-8 flex flex-col gap-16">
         {/* Animated Line Overlay */}
         <motion.div
-          className="absolute left-0 top-0 w-[2px] bg-[#3e4cff] origin-top"
+          className="absolute left-0 top-0 w-0.5 bg-[#3e4cff] origin-top"
           initial={{ scaleY: 0 }}
           whileInView={{ scaleY: 1 }}
           transition={{ duration: 1.5, ease: "easeInOut" }}
