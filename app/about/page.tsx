@@ -1,3 +1,4 @@
+import { Timeline } from '@/components/timeline'
 import Image from 'next/image'
 import React from 'react'
 
@@ -20,7 +21,9 @@ const about = () => {
       <div className = " flex flex-col gap-5">
         <p className = "text-4xl font-bold md:text-5xl">Architecting Digital Experiences</p>
 
-        <p>I am a software engineer and fullstack developer with a passion for creating innovative digital solutions. Ive been coding for up to 9 years and have experience in building scalable web applications and mobile apps.</p>
+        <p className="text-gray-600">
+          I am a software engineer and fullstack developer with a passion for creating innovative digital solutions. Ive been coding for up to 9 years and have experience in building scalable web applications and mobile apps.
+        </p>
       </div>
 
       <div className="flex flex-row gap-4">
@@ -45,6 +48,16 @@ const about = () => {
       </div>
       
     </div>
+
+    <section className="py-10 px-6 items-center justify-center text-center md:items-start md:text-left md:px-7">
+      
+      <div>
+        <p className="text-3xl font-bold">Experience</p>
+        <p className="text-gray-600">A decade of building software at scale</p>
+      </div>
+
+      <Timeline/>
+    </section>
    </div>
   )
 }

@@ -48,7 +48,7 @@ const page = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4  mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4  mx-auto mt-5">
           {/* Global Event Mesh - Large Card */}
           <div className="md:col-span-2 bg-gray-400 rounded-3xl p-8 min-h-75 relative overflow-hidden">
             <div className="bg-white/90 p-6 rounded-2xl max-w-sm">
