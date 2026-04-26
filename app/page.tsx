@@ -61,7 +61,7 @@ const page = () => {
                   Supabase
                 </span>
               </div>
-              <h3 className="text-2xl font-bold mb-2">Helpu</h3>
+              <h3 className="text-2xl font-bold mb-2">HelpU</h3>
               <p className="text-gray-600 text-sm">
                 A counselling mobile app that connects students with counsellors
               </p>
@@ -118,7 +118,7 @@ const page = () => {
             </div>
             <h3 className="text-2xl font-bold mb-4">Magnify</h3>
             <p className="text-gray-400 text-sm max-w-md">
-              A Landing page for a company that does consulting
+              A Landing page for a consulting company built with React and Tailwind CSS. It features a clean and modern design, responsive layout, and smooth animations to create an engaging user experience.
             </p>
           </div>
         </div>
