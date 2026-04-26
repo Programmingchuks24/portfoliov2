@@ -79,7 +79,7 @@ export const Timeline = () => {
 ];
 
   return (
-    <div className="max-w-3xl mx-auto py-10 px-6">
+    <div className=" py-10 px-6 md:px-0 md:w-full">
       <div className="relative border-l-2 border-gray-100 ml-3 pl-8 flex flex-col gap-16">
         {/* Animated Line Overlay */}
         <motion.div

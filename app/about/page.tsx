@@ -31,7 +31,7 @@ const about = () => {
           Get in Touch
         </button>
 
-        <button className="text-black bg-[#3e4cff]/10 px-6 py-2 rounded-xl text-sm font-semibold hover:bg-gray-400 hover:text-black hover:cursor-pointer transition-all">
+        <button className="text-black bg-[#3e4cff]/10 px-6 py-2 rounded-xl text-sm font-semibold hover:bg-gray-400 hover:text-white hover:cursor-pointer transition-all">
           Download CV
         </button>
       </div>
