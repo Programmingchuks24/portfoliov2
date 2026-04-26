@@ -36,7 +36,7 @@ const TimelineItem = ({ item, index }: { item: any; index: number }) => {
             {item.date}
           </span>
 
-          <h3 className="text-2xl font-bold text-gray-900 flex flex-wrap items-center gap-3">
+          <h3 className="text-2xl font-bold text-gray-900 flex flex-wrap items-center place-self-center gap-3">
             {item.title}
           </h3>
         </div>

@@ -4,7 +4,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="mt-10 mx-4">
+    <div className="mt-10 px-4 pt-2 bg-[#f8fafc] ">
       <div className="flex flex-row items-center gap-2 p-2 rounded-full bg-[#3e4cff]/10 w-fit text-xs text-[#3e4cff] font-semibold">
         <span className="relative flex size-2">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#3e4cff] opacity-75"></span>

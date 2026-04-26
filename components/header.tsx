@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation"; // Import this hook
 import { Menu, Moon, Terminal, X } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from "react";
+import { Tooltip,  TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,10 +41,34 @@ const Header = () => {
 
       {/* Icons & Resume */}
       <div className="hidden md:flex flex-row gap-4 items-center">
-        <Moon className="cursor-pointer hover:text-blue-500 transition-colors" size={20} />
-        <Link href="https://github.com/Programmingchuks24" target="_blank" rel="noopener noreferrer">
-          <Terminal className="cursor-pointer hover:text-green-500 transition-colors" size={20} />
-        </Link>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Moon
+              className="cursor-pointer hover:text-blue-500 transition-colors"
+              size={20}
+            />
+          </TooltipTrigger>
+
+          <TooltipContent>Toggle Dark Mode (Coming Soon)</TooltipContent>
+        </Tooltip>
+
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Link
+              href="https://github.com/Programmingchuks24"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Terminal
+                className="cursor-pointer hover:text-green-500 transition-colors"
+                size={20}
+              />
+            </Link>
+          </TooltipTrigger>
+
+          <TooltipContent>View My GitHub</TooltipContent>
+        </Tooltip>
+
         <button className="text-white bg-black px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-400 hover:text-black hover:cursor-pointer transition-all">
           RESUME
         </button>
