@@ -2,6 +2,7 @@
 import {
   BriefcaseBusiness,
   Code,
+  Loader2,
   Mail,
   MapPin,
   SendHorizonal,
@@ -11,8 +12,12 @@ import Link from "next/link";
 import React from "react";
 import { sendEmail } from "../actions/sendEmail";
 import {toast} from "sonner";
+import { useFormStatus } from "react-dom";
+import { SubmitButton } from "@/components/submitButton";
 
-const page = () => {
+const Page = () => {
+
+
   return (
     <div className="max-w-7xl mx-auto px-6 md:px-10 py-20">
       <div className="flex flex-col gap-4 mb-16 text-center md:text-left">
@@ -94,16 +99,7 @@ const page = () => {
               />
             </div>
 
-            <button
-              type="submit"
-              className="bg-black text-white px-10 py-5 rounded-2xl font-bold flex items-center justify-center gap-3 hover:bg-[#3e4cff] transition-all w-full md:w-fit group"
-            >
-              Send Message
-              <SendHorizonal
-                size={20}
-                className="group-hover:translate-x-1 transition-transform"
-              />
-            </button>
+            <SubmitButton />
           </form>
         </div>
 
@@ -173,4 +169,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
