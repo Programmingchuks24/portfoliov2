@@ -69,9 +69,14 @@ const Header = () => {
           <TooltipContent>View My GitHub</TooltipContent>
         </Tooltip>
 
-        <button className="text-white bg-black px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-400 hover:text-black hover:cursor-pointer transition-all">
-          RESUME
-        </button>
+        <a
+          href="/assets/cv/Chukwudubem_Ezeaku_FullStack_Developer.pdf"
+          download={"Chukwudubem_Ezeaku_FullStack_Developer.pdf"}
+        >
+          <button className="text-white bg-black px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-400 hover:text-black hover:cursor-pointer transition-all">
+            RESUME
+          </button>
+        </a>
       </div>
 
       {/* Mobile Toggle */}

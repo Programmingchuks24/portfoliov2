@@ -39,12 +39,13 @@ const about = () => {
               Get in Touch
             </Link>
 
-            <Link
-              href="/cv"
+            <a
+              href="/assets/cv/Chukwudubem_Ezeaku_FullStack_Developer.pdf"
+              download={"Chukwudubem_Ezeaku_FullStack_Developer.pdf"}
               className="text-black bg-[#3e4cff]/10 px-6 py-2 rounded-xl text-sm font-semibold hover:bg-gray-400 hover:text-white hover:cursor-pointer transition-all"
             >
               Download CV
-            </Link>
+            </a>
           </div>
         </section>
 

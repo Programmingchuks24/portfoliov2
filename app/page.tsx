@@ -1,5 +1,6 @@
 import { Activity, Cpu, Database, Rocket } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
@@ -26,9 +27,9 @@ const page = () => {
           </p>
 
           <div>
-            <button className="text-white bg-black px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-400 hover:text-black hover:cursor-pointer transition-all">
+            <Link href="/about" className="text-white bg-black px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-400 hover:text-black hover:cursor-pointer transition-all">
               View Projects
-            </button>
+            </Link>
           </div>
         </div>
 
